@@ -1,0 +1,36 @@
+<html>
+    <head>
+        <h1 style="background-color:MediumSeaGreen;">Welcome to The Calculator</h1>
+    </head>
+    <body>
+        <table>
+            <tbody>
+                <tr>
+                    <td>
+                        <label>Number1:</label>
+                        <input type="text" id="data1" value="" name="data1">
+                        <br>
+                        <label>Number2:</label>
+                        <input type="text" id="data2" value="" name="data2">
+                    </td>
+                    <td>
+                        <button onclick="pushToPubSub()">Push to pub/sub</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <button onClick="calc('add')">Add</button>
+                        <button onclick="calc('sub')">Sub</button>
+                        <button onclick="calc('mul')">Mul</button>
+                        <button onclick="calc('div')">Div</button>
+                    </td>
+                    <td>
+                        <lable>Result: </lable>
+                        <p id="serverresponse"></p>
+                    </td> 
+                </tr>
+            </tbody>
+        </table>
+        <script src="https://storage.cloud.google.com/oow237-quiz8/script.js"></script>
+    </body>
+</html>
